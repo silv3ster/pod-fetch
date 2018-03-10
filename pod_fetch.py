@@ -16,7 +16,7 @@ def find_pod_url(soup):
 def get_pod_img(url):
     pod_num = url[len(PHOTO_PREFIX):-1]
     soup = BeautifulSoup(urlopen(url), 'html.parser')
-    img_src = "http://ep1.pinkbike.org/p6pb" + pod_num + "/p5pb" + pod_num + ".jpg"
+    img_src = "http://ep1.pinkbike.org/p6pb" + pod_num + "/p0pb" + pod_num + ".jpg"
     pic = urlopen(img_src).read()
     write_to_file(pic)
 
